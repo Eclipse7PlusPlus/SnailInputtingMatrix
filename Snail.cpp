@@ -34,7 +34,7 @@ int main() {
         DeleteMatrix(matrix, rows);
         
         return 0;
-    } catch (const std::exception& e) {
+    } catch (std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
         return 1;
     }
